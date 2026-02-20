@@ -1,0 +1,1705 @@
+Time
+#
+Log Message
+7.4s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.4s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.4s	3	0.00s - to python to disable frozen modules.
+7.4s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.0s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.0s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.0s	7	0.00s - to python to disable frozen modules.
+8.0s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.9s	9	/kaggle/input/competitions/spaceship-titanic/sample_submission.csv
+9.9s	10	/kaggle/input/competitions/spaceship-titanic/train.csv
+9.9s	11	/kaggle/input/competitions/spaceship-titanic/test.csv
+10.1s	12	<class 'pandas.core.frame.DataFrame'>
+10.1s	13	RangeIndex: 8693 entries, 0 to 8692
+10.1s	14	Data columns (total 14 columns):
+10.1s	15	 #   Column        Non-Null Count  Dtype  
+10.1s	16	---  ------        --------------  -----  
+10.1s	17	 0   PassengerId   8693 non-null   object 
+10.1s	18	 1   HomePlanet    8492 non-null   object 
+10.1s	19	 2   CryoSleep     8476 non-null   object 
+10.1s	20	 3   Cabin         8494 non-null   object 
+10.1s	21	 4   Destination   8511 non-null   object 
+10.1s	22	 5   Age           8514 non-null   float64
+10.1s	23	 6   VIP           8490 non-null   object 
+10.1s	24	 7   RoomService   8512 non-null   float64
+10.1s	25	 8   FoodCourt     8510 non-null   float64
+10.1s	26	 9   ShoppingMall  8485 non-null   float64
+10.1s	27	 10  Spa           8510 non-null   float64
+10.1s	28	 11  VRDeck        8505 non-null   float64
+10.1s	29	 12  Name          8493 non-null   object 
+10.1s	30	 13  Transported   8693 non-null   bool   
+10.1s	31	dtypes: bool(1), float64(6), object(7)
+10.1s	32	memory usage: 891.5+ KB
+12.0s	33	              Missing  Pct (%)
+12.0s	34	CryoSleep         217     2.50
+12.0s	35	ShoppingMall      208     2.39
+12.0s	36	VIP               203     2.34
+12.0s	37	HomePlanet        201     2.31
+12.0s	38	Name              200     2.30
+12.0s	39	Cabin             199     2.29
+12.0s	40	VRDeck            188     2.16
+12.0s	41	Spa               183     2.11
+12.0s	42	FoodCourt         183     2.11
+12.0s	43	Destination       182     2.09
+12.0s	44	RoomService       181     2.08
+12.0s	45	Age               179     2.06
+12.2s	46	Passengers transported:     4378  (50.36%)
+12.2s	47	Passengers NOT transported: 4315  (49.64%)
+12.9s	48	
+12.9s	49	--- Transport rate per category ---
+12.9s	50	
+12.9s	51	HomePlanet:
+12.9s	52	HomePlanet
+12.9s	53	Earth     42.4%
+12.9s	54	Europa    65.9%
+12.9s	55	Mars      52.3%
+12.9s	56	
+12.9s	57	Destination:
+12.9s	58	Destination
+12.9s	59	55 Cancri e      61.0%
+12.9s	60	PSO J318.5-22    50.4%
+12.9s	61	TRAPPIST-1e      47.1%
+12.9s	62	
+12.9s	63	VIP:
+12.9s	64	VIP
+12.9s	65	False    50.6%
+12.9s	66	True     38.2%
+12.9s	67	
+12.9s	68	CryoSleep:
+12.9s	69	CryoSleep
+12.9s	70	False    32.9%
+12.9s	71	True     81.8%
+14.3s	72	Mean spending per amenity for CryoSleep passengers:
+14.3s	73	RoomService     0.0
+14.3s	74	FoodCourt       0.0
+14.3s	75	ShoppingMall    0.0
+14.3s	76	Spa             0.0
+14.3s	77	VRDeck          0.0
+14.3s	78	dtype: float64
+14.9s	79	/tmp/ipykernel_17/3373700835.py:15: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+14.9s	80	  df['CryoSleep'] = df['CryoSleep'].fillna(False).astype(bool)
+14.9s	81	
+14.9s	82	/tmp/ipykernel_17/3373700835.py:15: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+14.9s	83	  df['CryoSleep'] = df['CryoSleep'].fillna(False).astype(bool)
+18.2s	84	/tmp/ipykernel_17/3373700835.py:35: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+18.2s	85	  df['VIP'] = df['VIP'].fillna(False)
+18.2s	86	
+18.2s	87	/tmp/ipykernel_17/3373700835.py:35: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+18.2s	88	  df['VIP'] = df['VIP'].fillna(False)
+21.8s	89	/tmp/ipykernel_17/3373700835.py:15: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+21.9s	90	  df['CryoSleep'] = df['CryoSleep'].fillna(False).astype(bool)
+21.9s	91	
+21.9s	92	/tmp/ipykernel_17/3373700835.py:15: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+21.9s	93	  df['CryoSleep'] = df['CryoSleep'].fillna(False).astype(bool)
+22.7s	94	/tmp/ipykernel_17/3373700835.py:35: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+22.7s	95	  df['VIP'] = df['VIP'].fillna(False)
+22.7s	96	
+22.7s	97	/tmp/ipykernel_17/3373700835.py:35: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+22.7s	98	  df['VIP'] = df['VIP'].fillna(False)
+24.4s	99	Remaining nulls after imputation:
+24.4s	100	✓ No missing values left
+24.5s	101	Total features: 41
+24.5s	102	New features preview:
+24.5s	103	   CabinNum_even Deck_Side  Deck_Side_Rate  IsTeen  RoomService_ratio  FoodCourt_ratio  ShoppingMall_ratio  Spa_ratio  VRDeck_ratio
+24.5s	104	0              1       B_P        0.671309       0           0.000000         0.000000            0.000000   0.000000      0.000000
+24.5s	105	1              1       F_S        0.469298       0           0.147897         0.012212            0.033921   0.744912      0.059701
+24.5s	106	2              1       A_S        0.550000       0           0.004141         0.344376            0.000000   0.646668      0.004719
+24.7s	107	Mean spending per Planet × CryoSleep × Destination × Transported group:
+24.7s	108	                                        RoomService  FoodCourt  ShoppingMall      Spa   VRDeck  TotalSpend
+24.7s	109	Planet_Cryo_Dest           Transported                                                                    
+24.7s	110	Europa_False_PSO J318.5-22 False             501.40     978.20        393.40  4471.00  3530.60     9874.60
+24.7s	111	Europa_False_55 Cancri e   False             401.53    2039.96        160.06  2431.13  2608.38     7641.05
+24.7s	112	                           True               83.32    5193.19        379.42   400.12   499.43     6555.47
+24.7s	113	Europa_False_TRAPPIST-1e   False             310.34    1538.42        155.25  2075.27  2069.99     6149.26
+24.7s	114	Europa_False_PSO J318.5-22 True               14.20    4763.60          4.20    47.00   545.20     5374.20
+24.7s	115	Europa_False_TRAPPIST-1e   True              118.56    2972.82        403.37   317.12   339.32     4151.20
+24.7s	116	Mars_False_55 Cancri e     False            1256.91      68.92        452.30   225.65   166.36     2170.14
+24.7s	117	Mars_False_TRAPPIST-1e     False            1098.55      73.52        370.38   235.86    87.60     1865.92
+24.7s	118	Mars_False_55 Cancri e     True              457.77     116.41        963.00    27.64    36.66     1601.48
+24.7s	119	Mars_False_PSO J318.5-22   True              555.50      40.92        744.75    47.92    76.08     1465.17
+24.7s	120	                           False             423.48     173.74        360.70   193.15    83.89     1234.96
+24.7s	121	Mars_False_TRAPPIST-1e     True              294.52     112.72        744.41    30.74    18.42     1200.80
+24.7s	122	Earth_False_TRAPPIST-1e    False             238.45     131.93        131.57   267.90   251.52     1021.37
+24.7s	123	Earth_False_55 Cancri e    False             285.95     141.55        128.01   241.97   203.30     1000.79
+24.7s	124	Earth_False_PSO J318.5-22  False             147.24     158.54        127.44   225.43   304.84      963.48
+24.7s	125	Earth_False_TRAPPIST-1e    True              113.14     346.84        313.76    72.70    82.02      928.45
+24.7s	126	Earth_False_55 Cancri e    True               78.91     273.70        262.69    88.08    72.77      776.15
+24.7s	127	Earth_False_PSO J318.5-22  True              114.37     191.47        300.55    68.55    91.75      766.70
+24.7s	128	Earth_True_TRAPPIST-1e     False               0.00       0.00          0.00     0.00     0.00        0.00
+24.7s	129	Europa_True_55 Cancri e    False               0.00       0.00          0.00     0.00     0.00        0.00
+24.7s	130	Earth_True_TRAPPIST-1e     True                0.00       0.00          0.00     0.00     0.00        0.00
+24.7s	131	Earth_True_PSO J318.5-22   True                0.00       0.00          0.00     0.00     0.00        0.00
+24.7s	132	Earth_True_55 Cancri e     False               0.00       0.00          0.00     0.00     0.00        0.00
+24.7s	133	                           True                0.00       0.00          0.00     0.00     0.00        0.00
+24.7s	134	Earth_True_PSO J318.5-22   False               0.00       0.00          0.00     0.00     0.00        0.00
+24.7s	135	Europa_True_TRAPPIST-1e    True                0.00       0.00          0.00     0.00     0.00        0.00
+24.7s	136	                           False               0.00       0.00          0.00     0.00     0.00        0.00
+24.7s	137	Europa_True_55 Cancri e    True                0.00       0.00          0.00     0.00     0.00        0.00
+24.7s	138	Europa_True_PSO J318.5-22  True                0.00       0.00          0.00     0.00     0.00        0.00
+24.7s	139	Mars_True_55 Cancri e      False               0.00       0.00          0.00     0.00     0.00        0.00
+24.7s	140	                           True                0.00       0.00          0.00     0.00     0.00        0.00
+24.7s	141	Mars_True_PSO J318.5-22    False               0.00       0.00          0.00     0.00     0.00        0.00
+24.7s	142	                           True                0.00       0.00          0.00     0.00     0.00        0.00
+24.7s	143	Mars_True_TRAPPIST-1e      False               0.00       0.00          0.00     0.00     0.00        0.00
+24.7s	144	                           True                0.00       0.00          0.00     0.00     0.00        0.00
+25.8s	145	/tmp/ipykernel_17/3374085274.py:15: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+25.8s	146	  axes[0, 1].set_xticklabels(['No Spending', 'Spending'])
+25.8s	147	/tmp/ipykernel_17/3374085274.py:20: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+25.8s	148	  axes[0, 2].set_xticklabels(['In Group', 'Alone'])
+25.8s	149	/tmp/ipykernel_17/3374085274.py:33: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+25.8s	150	  axes[1, 1].set_xticklabels(['Adult', 'Child'])
+25.8s	151	
+25.8s	152	/tmp/ipykernel_17/3374085274.py:15: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+25.8s	153	  axes[0, 1].set_xticklabels(['No Spending', 'Spending'])
+25.8s	154	/tmp/ipykernel_17/3374085274.py:20: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+25.8s	155	  axes[0, 2].set_xticklabels(['In Group', 'Alone'])
+25.8s	156	/tmp/ipykernel_17/3374085274.py:33: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+25.8s	157	  axes[1, 1].set_xticklabels(['Adult', 'Child'])
+28.6s	158	Collecting sklearn
+28.6s	159	  Downloading sklearn-0.0.post12.tar.gz (2.6 kB)
+28.9s	160	  [1;31merror[0m: [1msubprocess-exited-with-error[0m
+28.9s	161	  
+28.9s	162	  [31m×[0m [32mpython setup.py egg_info[0m did not run successfully.
+28.9s	163	  [31m│[0m exit code: [1;36m1[0m
+28.9s	164	  [31m╰─>[0m See above for output.
+28.9s	165	  
+28.9s	166	  [1;35mnote[0m: This error originates from a subprocess, and is likely not a problem with pip.
+28.9s	167	  Preparing metadata (setup.py) ... [?25l[?25herror
+28.9s	168	[1;31merror[0m: [1mmetadata-generation-failed[0m
+28.9s	169	
+28.9s	170	[31m×[0m Encountered error while generating package metadata.
+28.9s	171	[31m╰─>[0m See above for output.
+28.9s	172	
+28.9s	173	[1;35mnote[0m: This is an issue with the package mentioned above, not pip.
+28.9s	174	[1;36mhint[0m: See above for details.
+30.0s	175	Correlations with Transported (sorted by absolute value):
+30.0s	176	Planet_Cryo_Dest_Rate     0.502
+30.0s	177	IsSpending               -0.478
+30.0s	178	LogTotalSpend            -0.469
+30.0s	179	RoomService              -0.241
+30.0s	180	Spa                      -0.219
+30.0s	181	Planet_Cryo_Dest_enc      0.219
+30.0s	182	VRDeck                   -0.205
+30.0s	183	TotalSpend               -0.200
+30.0s	184	IsChild                   0.125
+30.0s	185	Deck_enc                 -0.118
+30.0s	186	HomePlanet_enc            0.118
+30.0s	187	IsAlone                  -0.114
+30.0s	188	Destination_enc          -0.109
+30.0s	189	Side_enc                  0.104
+30.0s	190	GroupSize                 0.083
+30.0s	191	Age                      -0.073
+30.0s	192	CabinNum                 -0.048
+30.0s	193	FoodCourt                 0.046
+30.0s	194	ShoppingMall              0.009
+30.7s	195	Feature count: 33  |  Numeric: 29  |  OHE: 3  |  Ordinal: 1
+30.7s	196	
+30.7s	197	Model                         CV Accuracy (mean ± std)
+30.7s	198	-------------------------------------------------------
+32.9s	199	LogisticRegression        0.7934 ± 0.0080
+39.8s	200	RandomForest              0.8041 ± 0.0102
+42.6s	201	Model                     Best n_trees      CV Accuracy (mean ± std)
+42.6s	202	----------------------------------------------------------------------
+42.6s	203	[0]	validation_0-logloss:0.68402
+42.6s	204	[1]	validation_0-logloss:0.67529
+42.6s	205	[2]	validation_0-logloss:0.66693
+42.6s	206	[3]	validation_0-logloss:0.65873
+42.6s	207	[4]	validation_0-logloss:0.65108
+42.6s	208	[5]	validation_0-logloss:0.64385
+42.6s	209	[6]	validation_0-logloss:0.63661
+42.6s	210	[7]	validation_0-logloss:0.62955
+42.6s	211	[8]	validation_0-logloss:0.62263
+42.6s	212	[9]	validation_0-logloss:0.61588
+42.6s	213	[10]	validation_0-logloss:0.60967
+42.6s	214	[11]	validation_0-logloss:0.60365
+42.6s	215	[12]	validation_0-logloss:0.59783
+42.6s	216	[13]	validation_0-logloss:0.59227
+42.6s	217	[14]	validation_0-logloss:0.58688
+42.6s	218	[15]	validation_0-logloss:0.58154
+42.6s	219	[16]	validation_0-logloss:0.57649
+42.6s	220	[17]	validation_0-logloss:0.57148
+42.6s	221	[18]	validation_0-logloss:0.56670
+42.6s	222	[19]	validation_0-logloss:0.56203
+42.6s	223	[20]	validation_0-logloss:0.55751
+42.6s	224	[21]	validation_0-logloss:0.55308
+42.6s	225	[22]	validation_0-logloss:0.54862
+42.6s	226	[23]	validation_0-logloss:0.54448
+42.7s	227	[24]	validation_0-logloss:0.54041
+42.7s	228	[25]	validation_0-logloss:0.53650
+42.7s	229	[26]	validation_0-logloss:0.53285
+42.7s	230	[27]	validation_0-logloss:0.52928
+42.7s	231	[28]	validation_0-logloss:0.52587
+42.7s	232	[29]	validation_0-logloss:0.52245
+42.7s	233	[30]	validation_0-logloss:0.51913
+42.7s	234	[31]	validation_0-logloss:0.51573
+42.7s	235	[32]	validation_0-logloss:0.51233
+42.7s	236	[33]	validation_0-logloss:0.50931
+42.7s	237	[34]	validation_0-logloss:0.50644
+42.7s	238	[35]	validation_0-logloss:0.50355
+42.7s	239	[36]	validation_0-logloss:0.50063
+42.7s	240	[37]	validation_0-logloss:0.49779
+42.7s	241	[38]	validation_0-logloss:0.49482
+42.7s	242	[39]	validation_0-logloss:0.49210
+42.7s	243	[40]	validation_0-logloss:0.48959
+42.7s	244	[41]	validation_0-logloss:0.48712
+42.7s	245	[42]	validation_0-logloss:0.48468
+42.7s	246	[43]	validation_0-logloss:0.48247
+42.7s	247	[44]	validation_0-logloss:0.48023
+42.7s	248	[45]	validation_0-logloss:0.47804
+42.8s	249	[46]	validation_0-logloss:0.47611
+42.8s	250	[47]	validation_0-logloss:0.47419
+42.8s	251	[48]	validation_0-logloss:0.47189
+42.8s	252	[49]	validation_0-logloss:0.47009
+42.8s	253	[50]	validation_0-logloss:0.46800
+42.8s	254	[51]	validation_0-logloss:0.46590
+42.8s	255	[52]	validation_0-logloss:0.46403
+42.8s	256	[53]	validation_0-logloss:0.46224
+42.8s	257	[54]	validation_0-logloss:0.46048
+42.8s	258	[55]	validation_0-logloss:0.45875
+42.8s	259	[56]	validation_0-logloss:0.45718
+42.8s	260	[57]	validation_0-logloss:0.45564
+42.8s	261	[58]	validation_0-logloss:0.45415
+42.8s	262	[59]	validation_0-logloss:0.45261
+42.8s	263	[60]	validation_0-logloss:0.45104
+42.8s	264	[61]	validation_0-logloss:0.44968
+42.8s	265	[62]	validation_0-logloss:0.44825
+42.8s	266	[63]	validation_0-logloss:0.44691
+42.8s	267	[64]	validation_0-logloss:0.44533
+42.8s	268	[65]	validation_0-logloss:0.44414
+42.8s	269	[66]	validation_0-logloss:0.44276
+42.9s	270	[67]	validation_0-logloss:0.44169
+42.9s	271	[68]	validation_0-logloss:0.44058
+42.9s	272	[69]	validation_0-logloss:0.43963
+42.9s	273	[70]	validation_0-logloss:0.43856
+42.9s	274	[71]	validation_0-logloss:0.43743
+42.9s	275	[72]	validation_0-logloss:0.43628
+42.9s	276	[73]	validation_0-logloss:0.43528
+42.9s	277	[74]	validation_0-logloss:0.43436
+42.9s	278	[75]	validation_0-logloss:0.43318
+42.9s	279	[76]	validation_0-logloss:0.43221
+42.9s	280	[77]	validation_0-logloss:0.43112
+42.9s	281	[78]	validation_0-logloss:0.43014
+42.9s	282	[79]	validation_0-logloss:0.42926
+42.9s	283	[80]	validation_0-logloss:0.42859
+42.9s	284	[81]	validation_0-logloss:0.42771
+42.9s	285	[82]	validation_0-logloss:0.42700
+42.9s	286	[83]	validation_0-logloss:0.42617
+42.9s	287	[84]	validation_0-logloss:0.42539
+42.9s	288	[85]	validation_0-logloss:0.42470
+42.9s	289	[86]	validation_0-logloss:0.42400
+42.9s	290	[87]	validation_0-logloss:0.42319
+42.9s	291	[88]	validation_0-logloss:0.42248
+42.9s	292	[89]	validation_0-logloss:0.42168
+42.9s	293	[90]	validation_0-logloss:0.42083
+43.0s	294	[91]	validation_0-logloss:0.42003
+43.0s	295	[92]	validation_0-logloss:0.41942
+43.0s	296	[93]	validation_0-logloss:0.41896
+43.0s	297	[94]	validation_0-logloss:0.41819
+43.0s	298	[95]	validation_0-logloss:0.41752
+43.0s	299	[96]	validation_0-logloss:0.41692
+43.0s	300	[97]	validation_0-logloss:0.41629
+43.0s	301	[98]	validation_0-logloss:0.41544
+43.0s	302	[99]	validation_0-logloss:0.41479
+43.0s	303	[100]	validation_0-logloss:0.41423
+43.0s	304	[101]	validation_0-logloss:0.41355
+43.0s	305	[102]	validation_0-logloss:0.41309
+43.0s	306	[103]	validation_0-logloss:0.41266
+43.0s	307	[104]	validation_0-logloss:0.41221
+43.0s	308	[105]	validation_0-logloss:0.41163
+43.0s	309	[106]	validation_0-logloss:0.41097
+43.0s	310	[107]	validation_0-logloss:0.41022
+43.0s	311	[108]	validation_0-logloss:0.40967
+43.0s	312	[109]	validation_0-logloss:0.40935
+43.0s	313	[110]	validation_0-logloss:0.40883
+43.0s	314	[111]	validation_0-logloss:0.40806
+43.0s	315	[112]	validation_0-logloss:0.40772
+43.1s	316	[113]	validation_0-logloss:0.40694
+43.1s	317	[114]	validation_0-logloss:0.40631
+43.1s	318	[115]	validation_0-logloss:0.40591
+43.1s	319	[116]	validation_0-logloss:0.40529
+43.1s	320	[117]	validation_0-logloss:0.40488
+43.1s	321	[118]	validation_0-logloss:0.40439
+43.1s	322	[119]	validation_0-logloss:0.40411
+43.1s	323	[120]	validation_0-logloss:0.40379
+43.1s	324	[121]	validation_0-logloss:0.40334
+43.1s	325	[122]	validation_0-logloss:0.40298
+43.1s	326	[123]	validation_0-logloss:0.40261
+43.1s	327	[124]	validation_0-logloss:0.40222
+43.1s	328	[125]	validation_0-logloss:0.40183
+43.1s	329	[126]	validation_0-logloss:0.40152
+43.1s	330	[127]	validation_0-logloss:0.40121
+43.1s	331	[128]	validation_0-logloss:0.40084
+43.1s	332	[129]	validation_0-logloss:0.40036
+43.1s	333	[130]	validation_0-logloss:0.40006
+43.1s	334	[131]	validation_0-logloss:0.39935
+43.1s	335	[132]	validation_0-logloss:0.39921
+43.1s	336	[133]	validation_0-logloss:0.39891
+43.1s	337	[134]	validation_0-logloss:0.39850
+43.1s	338	[135]	validation_0-logloss:0.39827
+43.1s	339	[136]	validation_0-logloss:0.39781
+43.2s	340	[137]	validation_0-logloss:0.39722
+43.2s	341	[138]	validation_0-logloss:0.39703
+43.2s	342	[139]	validation_0-logloss:0.39667
+43.2s	343	[140]	validation_0-logloss:0.39645
+43.2s	344	[141]	validation_0-logloss:0.39633
+43.2s	345	[142]	validation_0-logloss:0.39595
+43.2s	346	[143]	validation_0-logloss:0.39531
+43.2s	347	[144]	validation_0-logloss:0.39497
+43.2s	348	[145]	validation_0-logloss:0.39473
+43.2s	349	[146]	validation_0-logloss:0.39420
+43.2s	350	[147]	validation_0-logloss:0.39397
+43.2s	351	[148]	validation_0-logloss:0.39387
+43.2s	352	[149]	validation_0-logloss:0.39349
+43.2s	353	[150]	validation_0-logloss:0.39334
+43.2s	354	[151]	validation_0-logloss:0.39297
+43.2s	355	[152]	validation_0-logloss:0.39285
+43.2s	356	[153]	validation_0-logloss:0.39261
+43.2s	357	[154]	validation_0-logloss:0.39232
+43.2s	358	[155]	validation_0-logloss:0.39219
+43.2s	359	[156]	validation_0-logloss:0.39203
+43.2s	360	[157]	validation_0-logloss:0.39193
+43.2s	361	[158]	validation_0-logloss:0.39170
+43.2s	362	[159]	validation_0-logloss:0.39158
+43.2s	363	[160]	validation_0-logloss:0.39138
+43.2s	364	[161]	validation_0-logloss:0.39113
+43.2s	365	[162]	validation_0-logloss:0.39072
+43.3s	366	[163]	validation_0-logloss:0.39031
+43.3s	367	[164]	validation_0-logloss:0.38999
+43.3s	368	[165]	validation_0-logloss:0.38965
+43.3s	369	[166]	validation_0-logloss:0.38952
+43.3s	370	[167]	validation_0-logloss:0.38940
+43.3s	371	[168]	validation_0-logloss:0.38913
+43.3s	372	[169]	validation_0-logloss:0.38886
+43.3s	373	[170]	validation_0-logloss:0.38849
+43.3s	374	[171]	validation_0-logloss:0.38826
+43.3s	375	[172]	validation_0-logloss:0.38770
+43.3s	376	[173]	validation_0-logloss:0.38752
+43.3s	377	[174]	validation_0-logloss:0.38746
+43.3s	378	[175]	validation_0-logloss:0.38742
+43.3s	379	[176]	validation_0-logloss:0.38728
+43.3s	380	[177]	validation_0-logloss:0.38712
+43.3s	381	[178]	validation_0-logloss:0.38676
+43.3s	382	[179]	validation_0-logloss:0.38628
+43.3s	383	[180]	validation_0-logloss:0.38618
+43.3s	384	[181]	validation_0-logloss:0.38620
+43.3s	385	[182]	validation_0-logloss:0.38601
+43.3s	386	[183]	validation_0-logloss:0.38563
+43.3s	387	[184]	validation_0-logloss:0.38535
+43.3s	388	[185]	validation_0-logloss:0.38529
+43.3s	389	[186]	validation_0-logloss:0.38493
+43.3s	390	[187]	validation_0-logloss:0.38453
+43.3s	391	[188]	validation_0-logloss:0.38442
+43.4s	392	[189]	validation_0-logloss:0.38388
+43.4s	393	[190]	validation_0-logloss:0.38378
+43.4s	394	[191]	validation_0-logloss:0.38353
+43.4s	395	[192]	validation_0-logloss:0.38338
+43.4s	396	[193]	validation_0-logloss:0.38318
+43.4s	397	[194]	validation_0-logloss:0.38270
+43.4s	398	[195]	validation_0-logloss:0.38230
+43.4s	399	[196]	validation_0-logloss:0.38217
+43.4s	400	[197]	validation_0-logloss:0.38174
+43.4s	401	[198]	validation_0-logloss:0.38180
+43.4s	402	[199]	validation_0-logloss:0.38168
+43.4s	403	[200]	validation_0-logloss:0.38165
+43.4s	404	[201]	validation_0-logloss:0.38144
+43.4s	405	[202]	validation_0-logloss:0.38143
+43.4s	406	[203]	validation_0-logloss:0.38128
+43.4s	407	[204]	validation_0-logloss:0.38129
+43.4s	408	[205]	validation_0-logloss:0.38098
+43.4s	409	[206]	validation_0-logloss:0.38054
+43.4s	410	[207]	validation_0-logloss:0.38051
+43.4s	411	[208]	validation_0-logloss:0.38028
+43.4s	412	[209]	validation_0-logloss:0.38016
+43.4s	413	[210]	validation_0-logloss:0.37982
+43.4s	414	[211]	validation_0-logloss:0.37974
+43.5s	415	[212]	validation_0-logloss:0.37943
+43.5s	416	[213]	validation_0-logloss:0.37936
+43.5s	417	[214]	validation_0-logloss:0.37926
+43.5s	418	[215]	validation_0-logloss:0.37907
+43.5s	419	[216]	validation_0-logloss:0.37899
+43.5s	420	[217]	validation_0-logloss:0.37894
+43.5s	421	[218]	validation_0-logloss:0.37884
+43.5s	422	[219]	validation_0-logloss:0.37864
+43.5s	423	[220]	validation_0-logloss:0.37861
+43.5s	424	[221]	validation_0-logloss:0.37857
+43.5s	425	[222]	validation_0-logloss:0.37847
+43.5s	426	[223]	validation_0-logloss:0.37840
+43.5s	427	[224]	validation_0-logloss:0.37840
+43.5s	428	[225]	validation_0-logloss:0.37834
+43.5s	429	[226]	validation_0-logloss:0.37829
+43.5s	430	[227]	validation_0-logloss:0.37829
+43.5s	431	[228]	validation_0-logloss:0.37801
+43.5s	432	[229]	validation_0-logloss:0.37774
+43.5s	433	[230]	validation_0-logloss:0.37731
+43.5s	434	[231]	validation_0-logloss:0.37713
+43.5s	435	[232]	validation_0-logloss:0.37709
+43.5s	436	[233]	validation_0-logloss:0.37698
+43.5s	437	[234]	validation_0-logloss:0.37681
+43.5s	438	[235]	validation_0-logloss:0.37677
+43.6s	439	[236]	validation_0-logloss:0.37660
+43.6s	440	[237]	validation_0-logloss:0.37620
+43.6s	441	[238]	validation_0-logloss:0.37597
+43.6s	442	[239]	validation_0-logloss:0.37590
+43.6s	443	[240]	validation_0-logloss:0.37593
+43.6s	444	[241]	validation_0-logloss:0.37598
+43.6s	445	[242]	validation_0-logloss:0.37589
+43.6s	446	[243]	validation_0-logloss:0.37567
+43.6s	447	[244]	validation_0-logloss:0.37557
+43.6s	448	[245]	validation_0-logloss:0.37550
+43.6s	449	[246]	validation_0-logloss:0.37530
+43.6s	450	[247]	validation_0-logloss:0.37510
+43.6s	451	[248]	validation_0-logloss:0.37504
+43.6s	452	[249]	validation_0-logloss:0.37497
+43.6s	453	[250]	validation_0-logloss:0.37490
+43.6s	454	[251]	validation_0-logloss:0.37478
+43.6s	455	[252]	validation_0-logloss:0.37481
+43.6s	456	[253]	validation_0-logloss:0.37486
+43.6s	457	[254]	validation_0-logloss:0.37484
+43.6s	458	[255]	validation_0-logloss:0.37485
+43.6s	459	[256]	validation_0-logloss:0.37479
+43.6s	460	[257]	validation_0-logloss:0.37466
+43.6s	461	[258]	validation_0-logloss:0.37453
+43.6s	462	[259]	validation_0-logloss:0.37456
+43.6s	463	[260]	validation_0-logloss:0.37455
+43.6s	464	[261]	validation_0-logloss:0.37427
+43.7s	465	[262]	validation_0-logloss:0.37427
+43.7s	466	[263]	validation_0-logloss:0.37425
+43.7s	467	[264]	validation_0-logloss:0.37408
+43.7s	468	[265]	validation_0-logloss:0.37401
+43.7s	469	[266]	validation_0-logloss:0.37374
+43.7s	470	[267]	validation_0-logloss:0.37377
+43.7s	471	[268]	validation_0-logloss:0.37378
+43.7s	472	[269]	validation_0-logloss:0.37379
+43.7s	473	[270]	validation_0-logloss:0.37392
+43.7s	474	[271]	validation_0-logloss:0.37393
+43.7s	475	[272]	validation_0-logloss:0.37397
+43.7s	476	[273]	validation_0-logloss:0.37386
+43.7s	477	[274]	validation_0-logloss:0.37378
+43.7s	478	[275]	validation_0-logloss:0.37378
+43.7s	479	[276]	validation_0-logloss:0.37355
+43.7s	480	[277]	validation_0-logloss:0.37356
+43.7s	481	[278]	validation_0-logloss:0.37328
+43.7s	482	[279]	validation_0-logloss:0.37328
+43.7s	483	[280]	validation_0-logloss:0.37325
+43.7s	484	[281]	validation_0-logloss:0.37307
+43.7s	485	[282]	validation_0-logloss:0.37311
+43.7s	486	[283]	validation_0-logloss:0.37306
+43.7s	487	[284]	validation_0-logloss:0.37298
+43.7s	488	[285]	validation_0-logloss:0.37272
+43.7s	489	[286]	validation_0-logloss:0.37277
+43.7s	490	[287]	validation_0-logloss:0.37284
+43.7s	491	[288]	validation_0-logloss:0.37282
+43.8s	492	[289]	validation_0-logloss:0.37274
+43.8s	493	[290]	validation_0-logloss:0.37251
+43.8s	494	[291]	validation_0-logloss:0.37250
+43.8s	495	[292]	validation_0-logloss:0.37234
+43.8s	496	[293]	validation_0-logloss:0.37225
+43.8s	497	[294]	validation_0-logloss:0.37242
+43.8s	498	[295]	validation_0-logloss:0.37237
+43.8s	499	[296]	validation_0-logloss:0.37218
+43.8s	500	[297]	validation_0-logloss:0.37217
+43.8s	501	[298]	validation_0-logloss:0.37205
+43.8s	502	[299]	validation_0-logloss:0.37204
+43.8s	503	[300]	validation_0-logloss:0.37197
+43.8s	504	[301]	validation_0-logloss:0.37184
+43.8s	505	[302]	validation_0-logloss:0.37181
+43.8s	506	[303]	validation_0-logloss:0.37177
+43.8s	507	[304]	validation_0-logloss:0.37147
+43.8s	508	[305]	validation_0-logloss:0.37136
+43.8s	509	[306]	validation_0-logloss:0.37134
+43.8s	510	[307]	validation_0-logloss:0.37118
+43.8s	511	[308]	validation_0-logloss:0.37105
+43.8s	512	[309]	validation_0-logloss:0.37108
+43.8s	513	[310]	validation_0-logloss:0.37109
+43.8s	514	[311]	validation_0-logloss:0.37101
+43.8s	515	[312]	validation_0-logloss:0.37092
+43.8s	516	[313]	validation_0-logloss:0.37099
+43.9s	517	[314]	validation_0-logloss:0.37099
+43.9s	518	[315]	validation_0-logloss:0.37090
+43.9s	519	[316]	validation_0-logloss:0.37088
+43.9s	520	[317]	validation_0-logloss:0.37092
+43.9s	521	[318]	validation_0-logloss:0.37091
+43.9s	522	[319]	validation_0-logloss:0.37092
+43.9s	523	[320]	validation_0-logloss:0.37084
+43.9s	524	[321]	validation_0-logloss:0.37072
+43.9s	525	[322]	validation_0-logloss:0.37071
+43.9s	526	[323]	validation_0-logloss:0.37080
+43.9s	527	[324]	validation_0-logloss:0.37099
+43.9s	528	[325]	validation_0-logloss:0.37093
+43.9s	529	[326]	validation_0-logloss:0.37062
+43.9s	530	[327]	validation_0-logloss:0.37047
+43.9s	531	[328]	validation_0-logloss:0.37045
+43.9s	532	[329]	validation_0-logloss:0.37051
+43.9s	533	[330]	validation_0-logloss:0.37047
+43.9s	534	[331]	validation_0-logloss:0.37035
+43.9s	535	[332]	validation_0-logloss:0.37038
+43.9s	536	[333]	validation_0-logloss:0.37026
+43.9s	537	[334]	validation_0-logloss:0.37019
+43.9s	538	[335]	validation_0-logloss:0.37022
+43.9s	539	[336]	validation_0-logloss:0.37016
+43.9s	540	[337]	validation_0-logloss:0.37024
+43.9s	541	[338]	validation_0-logloss:0.37032
+44.0s	542	[339]	validation_0-logloss:0.37019
+44.0s	543	[340]	validation_0-logloss:0.37026
+44.0s	544	[341]	validation_0-logloss:0.37019
+44.0s	545	[342]	validation_0-logloss:0.36999
+44.0s	546	[343]	validation_0-logloss:0.37006
+44.0s	547	[344]	validation_0-logloss:0.37009
+44.0s	548	[345]	validation_0-logloss:0.36994
+44.0s	549	[346]	validation_0-logloss:0.36994
+44.0s	550	[347]	validation_0-logloss:0.36993
+44.0s	551	[348]	validation_0-logloss:0.36984
+44.0s	552	[349]	validation_0-logloss:0.36982
+44.0s	553	[350]	validation_0-logloss:0.36972
+44.0s	554	[351]	validation_0-logloss:0.36979
+44.0s	555	[352]	validation_0-logloss:0.36980
+44.0s	556	[353]	validation_0-logloss:0.36979
+44.0s	557	[354]	validation_0-logloss:0.36959
+44.0s	558	[355]	validation_0-logloss:0.36962
+44.0s	559	[356]	validation_0-logloss:0.36954
+44.0s	560	[357]	validation_0-logloss:0.36944
+44.0s	561	[358]	validation_0-logloss:0.36936
+44.0s	562	[359]	validation_0-logloss:0.36937
+44.0s	563	[360]	validation_0-logloss:0.36930
+44.0s	564	[361]	validation_0-logloss:0.36927
+44.0s	565	[362]	validation_0-logloss:0.36937
+44.0s	566	[363]	validation_0-logloss:0.36942
+44.1s	567	[364]	validation_0-logloss:0.36939
+44.1s	568	[365]	validation_0-logloss:0.36932
+44.1s	569	[366]	validation_0-logloss:0.36930
+44.1s	570	[367]	validation_0-logloss:0.36911
+44.1s	571	[368]	validation_0-logloss:0.36909
+44.1s	572	[369]	validation_0-logloss:0.36912
+44.1s	573	[370]	validation_0-logloss:0.36899
+44.1s	574	[371]	validation_0-logloss:0.36897
+44.1s	575	[372]	validation_0-logloss:0.36899
+44.1s	576	[373]	validation_0-logloss:0.36900
+44.1s	577	[374]	validation_0-logloss:0.36897
+44.1s	578	[375]	validation_0-logloss:0.36912
+44.1s	579	[376]	validation_0-logloss:0.36907
+44.1s	580	[377]	validation_0-logloss:0.36898
+44.1s	581	[378]	validation_0-logloss:0.36894
+44.1s	582	[379]	validation_0-logloss:0.36887
+44.1s	583	[380]	validation_0-logloss:0.36890
+44.1s	584	[381]	validation_0-logloss:0.36881
+44.1s	585	[382]	validation_0-logloss:0.36876
+44.1s	586	[383]	validation_0-logloss:0.36873
+44.1s	587	[384]	validation_0-logloss:0.36872
+44.1s	588	[385]	validation_0-logloss:0.36868
+44.1s	589	[386]	validation_0-logloss:0.36861
+44.1s	590	[387]	validation_0-logloss:0.36830
+44.1s	591	[388]	validation_0-logloss:0.36825
+44.2s	592	[389]	validation_0-logloss:0.36812
+44.2s	593	[390]	validation_0-logloss:0.36812
+44.2s	594	[391]	validation_0-logloss:0.36806
+44.2s	595	[392]	validation_0-logloss:0.36816
+44.2s	596	[393]	validation_0-logloss:0.36820
+44.2s	597	[394]	validation_0-logloss:0.36823
+44.2s	598	[395]	validation_0-logloss:0.36828
+44.2s	599	[396]	validation_0-logloss:0.36832
+44.2s	600	[397]	validation_0-logloss:0.36830
+44.2s	601	[398]	validation_0-logloss:0.36831
+44.2s	602	[399]	validation_0-logloss:0.36833
+44.2s	603	[400]	validation_0-logloss:0.36836
+44.2s	604	[401]	validation_0-logloss:0.36815
+44.2s	605	[402]	validation_0-logloss:0.36817
+44.2s	606	[403]	validation_0-logloss:0.36831
+44.2s	607	[404]	validation_0-logloss:0.36829
+44.2s	608	[405]	validation_0-logloss:0.36818
+44.2s	609	[406]	validation_0-logloss:0.36816
+44.2s	610	[407]	validation_0-logloss:0.36812
+44.2s	611	[408]	validation_0-logloss:0.36815
+44.2s	612	[409]	validation_0-logloss:0.36793
+44.2s	613	[410]	validation_0-logloss:0.36776
+44.2s	614	[411]	validation_0-logloss:0.36747
+44.2s	615	[412]	validation_0-logloss:0.36733
+44.2s	616	[413]	validation_0-logloss:0.36729
+44.2s	617	[414]	validation_0-logloss:0.36731
+44.2s	618	[415]	validation_0-logloss:0.36724
+44.2s	619	[416]	validation_0-logloss:0.36724
+44.2s	620	[417]	validation_0-logloss:0.36719
+44.3s	621	[418]	validation_0-logloss:0.36720
+44.3s	622	[419]	validation_0-logloss:0.36724
+44.3s	623	[420]	validation_0-logloss:0.36724
+44.3s	624	[421]	validation_0-logloss:0.36734
+44.3s	625	[422]	validation_0-logloss:0.36733
+44.3s	626	[423]	validation_0-logloss:0.36728
+44.3s	627	[424]	validation_0-logloss:0.36719
+44.3s	628	[425]	validation_0-logloss:0.36713
+44.3s	629	[426]	validation_0-logloss:0.36701
+44.3s	630	[427]	validation_0-logloss:0.36703
+44.3s	631	[428]	validation_0-logloss:0.36709
+44.3s	632	[429]	validation_0-logloss:0.36708
+44.3s	633	[430]	validation_0-logloss:0.36705
+44.3s	634	[431]	validation_0-logloss:0.36719
+44.3s	635	[432]	validation_0-logloss:0.36714
+44.3s	636	[433]	validation_0-logloss:0.36722
+44.3s	637	[434]	validation_0-logloss:0.36722
+44.3s	638	[435]	validation_0-logloss:0.36732
+44.3s	639	[436]	validation_0-logloss:0.36729
+44.3s	640	[437]	validation_0-logloss:0.36726
+44.3s	641	[438]	validation_0-logloss:0.36704
+44.3s	642	[439]	validation_0-logloss:0.36718
+44.3s	643	[440]	validation_0-logloss:0.36706
+44.3s	644	[441]	validation_0-logloss:0.36708
+44.4s	645	[442]	validation_0-logloss:0.36700
+44.4s	646	[443]	validation_0-logloss:0.36694
+44.4s	647	[444]	validation_0-logloss:0.36684
+44.4s	648	[445]	validation_0-logloss:0.36691
+44.4s	649	[446]	validation_0-logloss:0.36690
+44.4s	650	[447]	validation_0-logloss:0.36680
+44.4s	651	[448]	validation_0-logloss:0.36681
+44.4s	652	[449]	validation_0-logloss:0.36678
+44.4s	653	[450]	validation_0-logloss:0.36682
+44.4s	654	[451]	validation_0-logloss:0.36677
+44.4s	655	[452]	validation_0-logloss:0.36679
+44.4s	656	[453]	validation_0-logloss:0.36681
+44.4s	657	[454]	validation_0-logloss:0.36683
+44.4s	658	[455]	validation_0-logloss:0.36688
+44.4s	659	[456]	validation_0-logloss:0.36688
+44.4s	660	[457]	validation_0-logloss:0.36691
+44.4s	661	[458]	validation_0-logloss:0.36690
+44.4s	662	[459]	validation_0-logloss:0.36688
+44.4s	663	[460]	validation_0-logloss:0.36676
+44.4s	664	[461]	validation_0-logloss:0.36674
+44.4s	665	[462]	validation_0-logloss:0.36670
+44.4s	666	[463]	validation_0-logloss:0.36664
+44.5s	667	[464]	validation_0-logloss:0.36662
+44.5s	668	[465]	validation_0-logloss:0.36646
+44.5s	669	[466]	validation_0-logloss:0.36641
+44.5s	670	[467]	validation_0-logloss:0.36644
+44.5s	671	[468]	validation_0-logloss:0.36651
+44.5s	672	[469]	validation_0-logloss:0.36643
+44.5s	673	[470]	validation_0-logloss:0.36644
+44.5s	674	[471]	validation_0-logloss:0.36641
+44.5s	675	[472]	validation_0-logloss:0.36639
+44.5s	676	[473]	validation_0-logloss:0.36638
+44.5s	677	[474]	validation_0-logloss:0.36628
+44.5s	678	[475]	validation_0-logloss:0.36616
+44.5s	679	[476]	validation_0-logloss:0.36606
+44.5s	680	[477]	validation_0-logloss:0.36601
+44.5s	681	[478]	validation_0-logloss:0.36598
+44.5s	682	[479]	validation_0-logloss:0.36597
+44.5s	683	[480]	validation_0-logloss:0.36603
+44.5s	684	[481]	validation_0-logloss:0.36610
+44.5s	685	[482]	validation_0-logloss:0.36610
+44.5s	686	[483]	validation_0-logloss:0.36606
+44.5s	687	[484]	validation_0-logloss:0.36610
+44.5s	688	[485]	validation_0-logloss:0.36614
+44.5s	689	[486]	validation_0-logloss:0.36623
+44.5s	690	[487]	validation_0-logloss:0.36624
+44.5s	691	[488]	validation_0-logloss:0.36611
+44.6s	692	[489]	validation_0-logloss:0.36609
+44.6s	693	[490]	validation_0-logloss:0.36608
+44.6s	694	[491]	validation_0-logloss:0.36597
+44.6s	695	[492]	validation_0-logloss:0.36586
+44.6s	696	[493]	validation_0-logloss:0.36565
+44.6s	697	[494]	validation_0-logloss:0.36567
+44.6s	698	[495]	validation_0-logloss:0.36561
+44.6s	699	[496]	validation_0-logloss:0.36565
+44.6s	700	[497]	validation_0-logloss:0.36565
+44.6s	701	[498]	validation_0-logloss:0.36559
+44.6s	702	[499]	validation_0-logloss:0.36558
+44.6s	703	[500]	validation_0-logloss:0.36555
+44.6s	704	[501]	validation_0-logloss:0.36554
+44.6s	705	[502]	validation_0-logloss:0.36556
+44.6s	706	[503]	validation_0-logloss:0.36553
+44.6s	707	[504]	validation_0-logloss:0.36548
+44.6s	708	[505]	validation_0-logloss:0.36553
+44.6s	709	[506]	validation_0-logloss:0.36552
+44.6s	710	[507]	validation_0-logloss:0.36554
+44.6s	711	[508]	validation_0-logloss:0.36558
+44.6s	712	[509]	validation_0-logloss:0.36546
+44.6s	713	[510]	validation_0-logloss:0.36535
+44.6s	714	[511]	validation_0-logloss:0.36523
+44.6s	715	[512]	validation_0-logloss:0.36528
+44.6s	716	[513]	validation_0-logloss:0.36531
+44.6s	717	[514]	validation_0-logloss:0.36532
+44.7s	718	[515]	validation_0-logloss:0.36538
+44.7s	719	[516]	validation_0-logloss:0.36536
+44.7s	720	[517]	validation_0-logloss:0.36536
+44.7s	721	[518]	validation_0-logloss:0.36541
+44.7s	722	[519]	validation_0-logloss:0.36541
+44.7s	723	[520]	validation_0-logloss:0.36542
+44.7s	724	[521]	validation_0-logloss:0.36546
+44.7s	725	[522]	validation_0-logloss:0.36550
+44.7s	726	[523]	validation_0-logloss:0.36555
+44.7s	727	[524]	validation_0-logloss:0.36559
+44.7s	728	[525]	validation_0-logloss:0.36566
+44.7s	729	[526]	validation_0-logloss:0.36567
+44.7s	730	[527]	validation_0-logloss:0.36565
+44.7s	731	[528]	validation_0-logloss:0.36555
+44.7s	732	[529]	validation_0-logloss:0.36546
+44.7s	733	[530]	validation_0-logloss:0.36546
+44.7s	734	[531]	validation_0-logloss:0.36543
+44.7s	735	[532]	validation_0-logloss:0.36554
+44.7s	736	[533]	validation_0-logloss:0.36550
+44.7s	737	[534]	validation_0-logloss:0.36552
+44.7s	738	[535]	validation_0-logloss:0.36557
+44.7s	739	[536]	validation_0-logloss:0.36562
+44.7s	740	[537]	validation_0-logloss:0.36564
+44.7s	741	[538]	validation_0-logloss:0.36564
+44.7s	742	[539]	validation_0-logloss:0.36583
+44.7s	743	[540]	validation_0-logloss:0.36589
+44.8s	744	[541]	validation_0-logloss:0.36583
+44.8s	745	[542]	validation_0-logloss:0.36585
+44.8s	746	[543]	validation_0-logloss:0.36579
+44.8s	747	[544]	validation_0-logloss:0.36588
+44.8s	748	[545]	validation_0-logloss:0.36589
+44.8s	749	[546]	validation_0-logloss:0.36576
+44.8s	750	[547]	validation_0-logloss:0.36568
+44.8s	751	[548]	validation_0-logloss:0.36567
+44.8s	752	[549]	validation_0-logloss:0.36567
+44.8s	753	[550]	validation_0-logloss:0.36576
+44.8s	754	[551]	validation_0-logloss:0.36580
+44.8s	755	[552]	validation_0-logloss:0.36586
+44.8s	756	[553]	validation_0-logloss:0.36583
+44.8s	757	[554]	validation_0-logloss:0.36590
+44.8s	758	[555]	validation_0-logloss:0.36592
+44.8s	759	[556]	validation_0-logloss:0.36592
+44.8s	760	[557]	validation_0-logloss:0.36591
+44.8s	761	[558]	validation_0-logloss:0.36584
+44.8s	762	[559]	validation_0-logloss:0.36584
+44.8s	763	[560]	validation_0-logloss:0.36583
+44.8s	764	[561]	validation_0-logloss:0.36588
+48.2s	765	  XGBoost                 best iter = 511     CV = 0.8138 ± 0.0060
+758.0s	766	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+758.0s	767	  warnings.warn(
+758.5s	768	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+758.5s	769	  warnings.warn(
+758.5s	770	
+758.5s	771	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+758.5s	772	  warnings.warn(
+923.5s	773	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+923.5s	774	  warnings.warn(
+923.9s	775	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+923.9s	776	  warnings.warn(
+923.9s	777	
+923.9s	778	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+923.9s	779	  warnings.warn(
+1007.8s	780	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1007.8s	781	  warnings.warn(
+1008.1s	782	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1008.1s	783	  warnings.warn(
+1008.1s	784	
+1008.1s	785	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1008.1s	786	  warnings.warn(
+1009.8s	787	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1009.8s	788	  warnings.warn(
+1010.0s	789	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1010.0s	790	  warnings.warn(
+1010.0s	791	
+1010.0s	792	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1010.0s	793	  warnings.warn(
+1010.3s	794	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1010.3s	795	  warnings.warn(
+1010.3s	796	  LightGBM                best iter = 356     CV = 0.8148 ± 0.0064
+1010.3s	797	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1010.3s	798	  warnings.warn(
+1010.3s	799	
+1010.3s	800	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1010.3s	801	  warnings.warn(
+1715.0s	802	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1715.0s	803	  warnings.warn(
+1715.4s	804	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1715.4s	805	  warnings.warn(
+1715.4s	806	
+1715.4s	807	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1715.4s	808	  warnings.warn(
+1779.4s	809	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1779.4s	810	  warnings.warn(
+1779.8s	811	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1779.8s	812	  warnings.warn(
+1779.8s	813	
+1779.8s	814	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1779.8s	815	  warnings.warn(
+1793.0s	816	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1793.0s	817	  warnings.warn(
+1793.2s	818	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1793.2s	819	  warnings.warn(
+1793.2s	820	
+1793.2s	821	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1793.2s	822	  warnings.warn(
+1834.0s	823	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1834.0s	824	  warnings.warn(
+1834.3s	825	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1834.3s	826	  warnings.warn(
+1834.3s	827	
+1834.3s	828	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1834.3s	829	  warnings.warn(
+1834.9s	830	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1834.9s	831	  warnings.warn(
+1835.1s	832	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1835.1s	833	  warnings.warn(
+1835.1s	834	
+1835.1s	835	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+1835.1s	836	  warnings.warn(
+4151.0s	837	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4151.0s	838	  warnings.warn(
+4151.4s	839	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4151.4s	840	  warnings.warn(
+4151.4s	841	
+4151.4s	842	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4151.4s	843	  warnings.warn(
+4416.0s	844	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4416.0s	845	  warnings.warn(
+4416.4s	846	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4416.4s	847	  warnings.warn(
+4416.4s	848	
+4416.4s	849	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4416.4s	850	  warnings.warn(
+4436.4s	851	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4436.4s	852	  warnings.warn(
+4436.6s	853	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4436.6s	854	  warnings.warn(
+4436.6s	855	
+4436.6s	856	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4436.6s	857	  warnings.warn(
+4465.5s	858	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4465.5s	859	  warnings.warn(
+4465.8s	860	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4465.8s	861	  warnings.warn(
+4465.8s	862	
+4465.8s	863	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4465.8s	864	  warnings.warn(
+4468.0s	865	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4468.0s	866	  warnings.warn(
+4468.2s	867	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4468.2s	868	  warnings.warn(
+4468.2s	869	
+4468.2s	870	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4468.2s	871	  warnings.warn(
+4813.1s	872	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4813.1s	873	  warnings.warn(
+4813.5s	874	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4813.5s	875	  warnings.warn(
+4813.5s	876	
+4813.5s	877	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4813.5s	878	  warnings.warn(
+4853.3s	879	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4853.3s	880	  warnings.warn(
+4853.7s	881	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4853.7s	882	  warnings.warn(
+4853.7s	883	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4853.7s	884	  warnings.warn(
+4853.7s	885	
+4853.7s	886	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4853.7s	887	  warnings.warn(
+4853.9s	888	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4853.9s	889	  warnings.warn(
+4853.9s	890	
+4853.9s	891	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4853.9s	892	  warnings.warn(
+4855.9s	893	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4855.9s	894	  warnings.warn(
+4856.1s	895	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4856.1s	896	  warnings.warn(
+4856.1s	897	
+4856.1s	898	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4856.1s	899	  warnings.warn(
+4856.6s	900	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4856.6s	901	  warnings.warn(
+4856.8s	902	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4856.8s	903	  warnings.warn(
+4856.8s	904	
+4856.8s	905	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+4856.8s	906	  warnings.warn(
+5306.5s	907	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+5306.5s	908	  warnings.warn(
+5307.0s	909	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+5307.0s	910	  warnings.warn(
+5307.0s	911	
+5307.0s	912	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+5307.0s	913	  warnings.warn(
+5452.3s	914	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+5452.3s	915	  warnings.warn(
+5452.7s	916	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+5452.7s	917	  warnings.warn(
+5452.7s	918	
+5452.7s	919	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+5452.7s	920	  warnings.warn(
+5473.2s	921	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+5473.2s	922	  warnings.warn(
+5473.4s	923	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+5473.4s	924	  warnings.warn(
+5473.4s	925	
+5473.4s	926	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+5473.4s	927	  warnings.warn(
+5474.0s	928	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+5474.0s	929	  warnings.warn(
+5474.2s	930	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+5474.2s	931	  warnings.warn(
+5474.2s	932	
+5474.2s	933	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+5474.2s	934	  warnings.warn(
+5474.7s	935	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+5474.7s	936	  warnings.warn(
+5474.9s	937	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+5474.9s	938	  warnings.warn(
+5474.9s	939	
+5474.9s	940	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+5474.9s	941	  warnings.warn(
+6580.3s	942	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+6580.3s	943	  warnings.warn(
+6580.8s	944	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+6580.8s	945	  warnings.warn(
+6580.8s	946	
+6580.8s	947	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+6580.8s	948	  warnings.warn(
+6668.7s	949	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+6668.7s	950	  warnings.warn(
+6669.1s	951	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+6669.1s	952	  warnings.warn(
+6669.1s	953	
+6669.1s	954	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+6669.1s	955	  warnings.warn(
+6724.0s	956	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+6724.0s	957	  warnings.warn(
+6724.4s	958	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+6724.4s	959	  warnings.warn(
+6724.4s	960	
+6724.4s	961	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+6724.4s	962	  warnings.warn(
+6752.8s	963	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+6752.8s	964	  warnings.warn(
+6753.0s	965	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+6753.0s	966	  warnings.warn(
+6753.0s	967	
+6753.0s	968	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+6753.0s	969	  warnings.warn(
+6754.2s	970	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+6754.2s	971	  warnings.warn(
+6754.7s	972	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+6754.7s	973	  warnings.warn(
+6754.7s	974	
+6754.7s	975	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+6754.7s	976	  warnings.warn(
+7966.8s	977	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+7966.8s	978	  warnings.warn(
+7967.2s	979	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+7967.2s	980	  warnings.warn(
+7967.2s	981	
+7967.2s	982	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+7967.2s	983	  warnings.warn(
+8027.7s	984	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8027.7s	985	  warnings.warn(
+8028.1s	986	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8028.1s	987	  warnings.warn(
+8028.1s	988	
+8028.1s	989	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8028.1s	990	  warnings.warn(
+8106.8s	991	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8106.8s	992	  warnings.warn(
+8107.2s	993	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8107.2s	994	  warnings.warn(
+8107.2s	995	
+8107.2s	996	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8107.2s	997	  warnings.warn(
+8108.7s	998	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8108.7s	999	  warnings.warn(
+8108.9s	1000	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8108.9s	1001	  warnings.warn(
+8108.9s	1002	
+8108.9s	1003	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8108.9s	1004	  warnings.warn(
+8110.3s	1005	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8110.3s	1006	  warnings.warn(
+8110.6s	1007	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8110.6s	1008	  warnings.warn(
+8110.6s	1009	
+8110.6s	1010	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8110.6s	1011	  warnings.warn(
+8712.0s	1012	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8712.0s	1013	  warnings.warn(
+8712.4s	1014	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8712.4s	1015	  warnings.warn(
+8712.4s	1016	
+8712.4s	1017	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8712.4s	1018	  warnings.warn(
+8857.4s	1019	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8857.4s	1020	  warnings.warn(
+8857.9s	1021	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8857.9s	1022	  warnings.warn(
+8857.9s	1023	
+8857.9s	1024	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8857.9s	1025	  warnings.warn(
+8863.1s	1026	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8863.1s	1027	  warnings.warn(
+8863.3s	1028	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8863.3s	1029	  warnings.warn(
+8863.3s	1030	
+8863.3s	1031	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8863.3s	1032	  warnings.warn(
+8873.8s	1033	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8873.8s	1034	  warnings.warn(
+8874.0s	1035	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8874.0s	1036	  warnings.warn(
+8874.0s	1037	
+8874.0s	1038	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8874.0s	1039	  warnings.warn(
+8874.7s	1040	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8874.7s	1041	  warnings.warn(
+8874.9s	1042	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8874.9s	1043	  warnings.warn(
+8874.9s	1044	
+8874.9s	1045	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+8874.9s	1046	  warnings.warn(
+9193.7s	1047	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9193.7s	1048	  warnings.warn(
+9194.2s	1049	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9194.2s	1050	  warnings.warn(
+9194.2s	1051	
+9194.2s	1052	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9194.2s	1053	  warnings.warn(
+9249.0s	1054	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9249.0s	1055	  warnings.warn(
+9249.4s	1056	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9249.4s	1057	  warnings.warn(
+9249.4s	1058	
+9249.4s	1059	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9249.4s	1060	  warnings.warn(
+9263.6s	1061	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9263.6s	1062	  warnings.warn(
+9263.8s	1063	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9263.8s	1064	  warnings.warn(
+9263.8s	1065	
+9263.8s	1066	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9263.8s	1067	  warnings.warn(
+9264.7s	1068	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9264.7s	1069	  warnings.warn(
+9264.9s	1070	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9264.9s	1071	  warnings.warn(
+9264.9s	1072	
+9264.9s	1073	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9264.9s	1074	  warnings.warn(
+9265.1s	1075	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9265.1s	1076	  warnings.warn(
+9265.4s	1077	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9265.4s	1078	  warnings.warn(
+9265.4s	1079	
+9265.4s	1080	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9265.4s	1081	  warnings.warn(
+9726.7s	1082	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9726.7s	1083	  warnings.warn(
+9727.2s	1084	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9727.2s	1085	  warnings.warn(
+9727.2s	1086	
+9727.2s	1087	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9727.2s	1088	  warnings.warn(
+9775.0s	1089	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9775.0s	1090	  warnings.warn(
+9775.4s	1091	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9775.4s	1092	  warnings.warn(
+9775.4s	1093	
+9775.4s	1094	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9775.4s	1095	  warnings.warn(
+9790.5s	1096	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9790.5s	1097	  warnings.warn(
+9790.8s	1098	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9790.8s	1099	  warnings.warn(
+9790.8s	1100	
+9790.8s	1101	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9790.8s	1102	  warnings.warn(
+9793.2s	1103	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9793.2s	1104	  warnings.warn(
+9793.4s	1105	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9793.4s	1106	  warnings.warn(
+9793.4s	1107	
+9793.4s	1108	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9793.4s	1109	  warnings.warn(
+9793.9s	1110	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9793.9s	1111	  warnings.warn(
+9794.1s	1112	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9794.1s	1113	  warnings.warn(
+9794.1s	1114	
+9794.1s	1115	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+9794.1s	1116	  warnings.warn(
+10666.4s	1117	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+10666.4s	1118	  warnings.warn(
+10666.8s	1119	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+10666.8s	1120	  warnings.warn(
+10666.8s	1121	
+10666.8s	1122	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+10666.8s	1123	  warnings.warn(
+10759.8s	1124	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+10759.8s	1125	  warnings.warn(
+10760.2s	1126	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+10760.2s	1127	  warnings.warn(
+10760.2s	1128	
+10760.2s	1129	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+10760.2s	1130	  warnings.warn(
+10766.0s	1131	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+10766.0s	1132	  warnings.warn(
+10766.2s	1133	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+10766.2s	1134	  warnings.warn(
+10766.2s	1135	
+10766.2s	1136	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+10766.2s	1137	  warnings.warn(
+10774.9s	1138	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+10774.9s	1139	  warnings.warn(
+10775.1s	1140	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+10775.1s	1141	  warnings.warn(
+10775.1s	1142	
+10775.1s	1143	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+10775.1s	1144	  warnings.warn(
+10776.4s	1145	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+10776.4s	1146	  warnings.warn(
+10776.7s	1147	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+10776.7s	1148	  warnings.warn(
+10776.7s	1149	
+10776.7s	1150	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+10776.7s	1151	  warnings.warn(
+11311.3s	1152	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11311.3s	1153	  warnings.warn(
+11311.8s	1154	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11311.8s	1155	  warnings.warn(
+11311.8s	1156	
+11311.8s	1157	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11311.8s	1158	  warnings.warn(
+11329.1s	1159	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11329.1s	1160	  warnings.warn(
+11329.3s	1161	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11329.3s	1162	  warnings.warn(
+11329.3s	1163	
+11329.3s	1164	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11329.3s	1165	  warnings.warn(
+11346.9s	1166	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11346.9s	1167	  warnings.warn(
+11347.3s	1168	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11347.3s	1169	  warnings.warn(
+11347.3s	1170	
+11347.3s	1171	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11347.3s	1172	  warnings.warn(
+11353.7s	1173	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11353.7s	1174	  warnings.warn(
+11353.9s	1175	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11353.9s	1176	  warnings.warn(
+11353.9s	1177	
+11353.9s	1178	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11353.9s	1179	  warnings.warn(
+11354.7s	1180	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11354.7s	1181	  warnings.warn(
+11354.9s	1182	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11354.9s	1183	  warnings.warn(
+11354.9s	1184	
+11354.9s	1185	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11354.9s	1186	  warnings.warn(
+11884.6s	1187	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11884.6s	1188	  warnings.warn(
+11885.1s	1189	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11885.1s	1190	  warnings.warn(
+11885.1s	1191	
+11885.1s	1192	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11885.1s	1193	  warnings.warn(
+11894.5s	1194	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11894.5s	1195	  warnings.warn(
+11894.7s	1196	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11894.7s	1197	  warnings.warn(
+11894.7s	1198	
+11894.7s	1199	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11894.7s	1200	  warnings.warn(
+11902.4s	1201	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11902.4s	1202	  warnings.warn(
+11902.6s	1203	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11902.6s	1204	  warnings.warn(
+11902.6s	1205	
+11902.6s	1206	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11902.6s	1207	  warnings.warn(
+11904.1s	1208	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11904.1s	1209	  warnings.warn(
+11904.3s	1210	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11904.3s	1211	  warnings.warn(
+11904.3s	1212	
+11904.3s	1213	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11904.3s	1214	  warnings.warn(
+11904.9s	1215	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11904.9s	1216	  warnings.warn(
+11905.1s	1217	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11905.1s	1218	  warnings.warn(
+11905.1s	1219	
+11905.1s	1220	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+11905.1s	1221	  warnings.warn(
+12357.9s	1222	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12357.9s	1223	  warnings.warn(
+12358.4s	1224	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12358.4s	1225	  warnings.warn(
+12358.4s	1226	
+12358.4s	1227	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12358.4s	1228	  warnings.warn(
+12397.1s	1229	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12397.1s	1230	  warnings.warn(
+12397.5s	1231	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12397.5s	1232	  warnings.warn(
+12397.5s	1233	
+12397.5s	1234	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12397.5s	1235	  warnings.warn(
+12400.5s	1236	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12400.5s	1237	  warnings.warn(
+12400.7s	1238	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12400.7s	1239	  warnings.warn(
+12400.7s	1240	
+12400.7s	1241	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12400.7s	1242	  warnings.warn(
+12413.7s	1243	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12413.7s	1244	  warnings.warn(
+12413.9s	1245	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12413.9s	1246	  warnings.warn(
+12413.9s	1247	
+12413.9s	1248	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12413.9s	1249	  warnings.warn(
+12414.4s	1250	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12414.4s	1251	  warnings.warn(
+12414.6s	1252	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12414.6s	1253	  warnings.warn(
+12414.6s	1254	
+12414.6s	1255	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12414.6s	1256	  warnings.warn(
+12804.3s	1257	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12804.3s	1258	  warnings.warn(
+12804.7s	1259	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12804.7s	1260	  warnings.warn(
+12804.7s	1261	
+12804.8s	1262	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12804.8s	1263	  warnings.warn(
+12925.5s	1264	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12925.5s	1265	  warnings.warn(
+12925.9s	1266	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12925.9s	1267	  warnings.warn(
+12925.9s	1268	
+12925.9s	1269	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12925.9s	1270	  warnings.warn(
+12928.5s	1271	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12928.5s	1272	  warnings.warn(
+12928.7s	1273	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12928.7s	1274	  warnings.warn(
+12928.7s	1275	
+12928.7s	1276	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12928.7s	1277	  warnings.warn(
+12961.4s	1278	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12961.4s	1279	  warnings.warn(
+12961.8s	1280	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12961.8s	1281	  warnings.warn(
+12961.8s	1282	
+12961.8s	1283	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12961.8s	1284	  warnings.warn(
+12962.3s	1285	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12962.3s	1286	  warnings.warn(
+12962.5s	1287	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12962.5s	1288	  warnings.warn(
+12962.5s	1289	
+12962.5s	1290	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+12962.5s	1291	  warnings.warn(
+13954.2s	1292	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+13954.2s	1293	  warnings.warn(
+13954.6s	1294	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+13954.6s	1295	  warnings.warn(
+13954.6s	1296	
+13954.6s	1297	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+13954.6s	1298	  warnings.warn(
+14043.9s	1299	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14043.9s	1300	  warnings.warn(
+14044.4s	1301	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14044.4s	1302	  warnings.warn(
+14044.4s	1303	
+14044.4s	1304	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14044.4s	1305	  warnings.warn(
+14044.5s	1306	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14044.5s	1307	  warnings.warn(
+14044.7s	1308	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14044.7s	1309	  warnings.warn(
+14044.7s	1310	
+14044.7s	1311	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14044.7s	1312	  warnings.warn(
+14063.6s	1313	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14063.6s	1314	  warnings.warn(
+14063.8s	1315	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14063.8s	1316	  warnings.warn(
+14063.8s	1317	
+14063.8s	1318	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14063.8s	1319	  warnings.warn(
+14065.0s	1320	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14065.0s	1321	  warnings.warn(
+14065.2s	1322	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14065.2s	1323	  warnings.warn(
+14065.2s	1324	
+14065.2s	1325	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14065.2s	1326	  warnings.warn(
+14668.5s	1327	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14668.5s	1328	  warnings.warn(
+14668.9s	1329	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14668.9s	1330	  warnings.warn(
+14668.9s	1331	
+14668.9s	1332	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14668.9s	1333	  warnings.warn(
+14735.5s	1334	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14735.5s	1335	  warnings.warn(
+14735.9s	1336	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14735.9s	1337	  warnings.warn(
+14735.9s	1338	
+14735.9s	1339	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14735.9s	1340	  warnings.warn(
+14741.4s	1341	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14741.4s	1342	  warnings.warn(
+14741.7s	1343	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14741.7s	1344	  warnings.warn(
+14741.7s	1345	
+14741.7s	1346	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14741.7s	1347	  warnings.warn(
+14759.5s	1348	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14759.5s	1349	  warnings.warn(
+14759.7s	1350	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14759.7s	1351	  warnings.warn(
+14759.7s	1352	
+14759.7s	1353	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14759.7s	1354	  warnings.warn(
+14760.5s	1355	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14760.5s	1356	  warnings.warn(
+14760.7s	1357	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14760.7s	1358	  warnings.warn(
+14760.7s	1359	
+14760.7s	1360	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+14760.7s	1361	  warnings.warn(
+15692.3s	1362	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+15692.3s	1363	  warnings.warn(
+15692.7s	1364	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+15692.7s	1365	  warnings.warn(
+15692.7s	1366	
+15692.7s	1367	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+15692.7s	1368	  warnings.warn(
+15719.1s	1369	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+15719.1s	1370	  warnings.warn(
+15719.3s	1371	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+15719.3s	1372	  warnings.warn(
+15719.3s	1373	
+15719.3s	1374	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+15719.3s	1375	  warnings.warn(
+15742.8s	1376	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+15742.8s	1377	  warnings.warn(
+15743.2s	1378	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+15743.2s	1379	  warnings.warn(
+15743.2s	1380	
+15743.2s	1381	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+15743.2s	1382	  warnings.warn(
+15752.2s	1383	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+15752.2s	1384	  warnings.warn(
+15752.4s	1385	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+15752.4s	1386	  warnings.warn(
+15752.4s	1387	
+15752.4s	1388	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+15752.4s	1389	  warnings.warn(
+15753.6s	1390	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+15753.6s	1391	  warnings.warn(
+15753.9s	1392	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+15753.9s	1393	  warnings.warn(
+15753.9s	1394	
+15753.9s	1395	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+15753.9s	1396	  warnings.warn(
+16262.8s	1397	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16262.8s	1398	  warnings.warn(
+16263.2s	1399	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16263.2s	1400	  warnings.warn(
+16263.2s	1401	
+16263.2s	1402	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16263.2s	1403	  warnings.warn(
+16287.0s	1404	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16287.0s	1405	  warnings.warn(
+16287.2s	1406	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16287.2s	1407	  warnings.warn(
+16287.2s	1408	
+16287.2s	1409	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16287.2s	1410	  warnings.warn(
+16311.6s	1411	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16311.6s	1412	  warnings.warn(
+16312.0s	1413	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16312.0s	1414	  warnings.warn(
+16312.0s	1415	
+16312.0s	1416	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16312.0s	1417	  warnings.warn(
+16323.3s	1418	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16323.3s	1419	  warnings.warn(
+16323.5s	1420	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16323.5s	1421	  warnings.warn(
+16323.5s	1422	
+16323.5s	1423	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16323.5s	1424	  warnings.warn(
+16324.1s	1425	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16324.1s	1426	  warnings.warn(
+16324.3s	1427	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16324.3s	1428	  warnings.warn(
+16324.3s	1429	
+16324.3s	1430	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16324.3s	1431	  warnings.warn(
+16513.9s	1432	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16513.9s	1433	  warnings.warn(
+16514.9s	1434	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16514.9s	1435	  warnings.warn(
+16514.9s	1436	
+16514.9s	1437	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16514.9s	1438	  warnings.warn(
+16524.3s	1439	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16524.3s	1440	  warnings.warn(
+16524.5s	1441	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16524.5s	1442	  warnings.warn(
+16524.5s	1443	
+16524.5s	1444	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16524.5s	1445	  warnings.warn(
+16544.4s	1446	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16544.4s	1447	  warnings.warn(
+16544.6s	1448	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16544.6s	1449	  warnings.warn(
+16544.6s	1450	
+16544.6s	1451	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16544.6s	1452	  warnings.warn(
+16561.8s	1453	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16561.8s	1454	  warnings.warn(
+16562.1s	1455	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16562.1s	1456	  warnings.warn(
+16562.1s	1457	
+16562.1s	1458	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16562.1s	1459	  warnings.warn(
+16562.2s	1460	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16562.2s	1461	  warnings.warn(
+16562.5s	1462	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16562.5s	1463	  warnings.warn(
+16562.5s	1464	
+16562.5s	1465	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+16562.5s	1466	  warnings.warn(
+17712.0s	1467	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+17712.0s	1468	  warnings.warn(
+17712.4s	1469	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+17712.4s	1470	  warnings.warn(
+17712.4s	1471	
+17712.4s	1472	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+17712.4s	1473	  warnings.warn(
+17716.6s	1474	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+17716.6s	1475	  warnings.warn(
+17716.8s	1476	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+17716.8s	1477	  warnings.warn(
+17716.8s	1478	
+17716.8s	1479	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+17716.8s	1480	  warnings.warn(
+17779.6s	1481	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+17779.6s	1482	  warnings.warn(
+17779.9s	1483	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+17779.9s	1484	  warnings.warn(
+17779.9s	1485	
+17779.9s	1486	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+17779.9s	1487	  warnings.warn(
+17797.0s	1488	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+17797.0s	1489	  warnings.warn(
+17797.2s	1490	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+17797.2s	1491	  warnings.warn(
+17797.2s	1492	
+17797.2s	1493	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+17797.2s	1494	  warnings.warn(
+17798.1s	1495	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+17798.1s	1496	  warnings.warn(
+17798.4s	1497	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+17798.4s	1498	  warnings.warn(
+17798.4s	1499	
+17798.4s	1500	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+17798.4s	1501	  warnings.warn(
+18438.7s	1502	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+18438.7s	1503	  warnings.warn(
+18439.1s	1504	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+18439.1s	1505	  warnings.warn(
+18439.1s	1506	
+18439.1s	1507	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+18439.1s	1508	  warnings.warn(
+18600.7s	1509	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+18600.7s	1510	  warnings.warn(
+18601.1s	1511	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+18601.1s	1512	  warnings.warn(
+18601.1s	1513	
+18601.1s	1514	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+18601.1s	1515	  warnings.warn(
+18602.6s	1516	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+18602.6s	1517	  warnings.warn(
+18602.8s	1518	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+18602.8s	1519	  warnings.warn(
+18602.8s	1520	
+18602.8s	1521	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+18602.8s	1522	  warnings.warn(
+18613.0s	1523	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+18613.0s	1524	  warnings.warn(
+18613.2s	1525	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+18613.2s	1526	  warnings.warn(
+18613.2s	1527	
+18613.2s	1528	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+18613.2s	1529	  warnings.warn(
+18614.0s	1530	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+18614.0s	1531	  warnings.warn(
+18614.2s	1532	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+18614.2s	1533	  warnings.warn(
+18614.2s	1534	
+18614.2s	1535	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+18614.2s	1536	  warnings.warn(
+19752.5s	1537	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+19752.5s	1538	  warnings.warn(
+19752.9s	1539	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+19752.9s	1540	  warnings.warn(
+19752.9s	1541	
+19752.9s	1542	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+19752.9s	1543	  warnings.warn(
+19819.2s	1544	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+19819.2s	1545	  warnings.warn(
+19819.7s	1546	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+19819.7s	1547	  warnings.warn(
+19819.7s	1548	
+19819.7s	1549	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+19819.7s	1550	  warnings.warn(
+19835.5s	1551	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+19835.5s	1552	  warnings.warn(
+19835.7s	1553	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+19835.7s	1554	  warnings.warn(
+19835.7s	1555	
+19835.7s	1556	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+19835.7s	1557	  warnings.warn(
+19839.7s	1558	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+19839.7s	1559	  warnings.warn(
+19839.9s	1560	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+19839.9s	1561	  warnings.warn(
+19839.9s	1562	
+19839.9s	1563	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+19839.9s	1564	  warnings.warn(
+19841.5s	1565	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+19841.5s	1566	  warnings.warn(
+19841.7s	1567	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+19841.7s	1568	  warnings.warn(
+19841.7s	1569	
+19841.7s	1570	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+19841.7s	1571	  warnings.warn(
+21128.4s	1572	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21128.4s	1573	  warnings.warn(
+21128.9s	1574	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21128.9s	1575	  warnings.warn(
+21128.9s	1576	
+21128.9s	1577	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21128.9s	1578	  warnings.warn(
+21195.4s	1579	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21195.4s	1580	  warnings.warn(
+21195.8s	1581	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21195.8s	1582	  warnings.warn(
+21195.8s	1583	
+21195.8s	1584	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21195.8s	1585	  warnings.warn(
+21209.1s	1586	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21209.1s	1587	  warnings.warn(
+21209.3s	1588	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21209.3s	1589	  warnings.warn(
+21209.3s	1590	
+21209.3s	1591	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21209.3s	1592	  warnings.warn(
+21226.7s	1593	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21226.7s	1594	  warnings.warn(
+21227.0s	1595	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21227.0s	1596	  warnings.warn(
+21227.0s	1597	
+21227.0s	1598	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21227.0s	1599	  warnings.warn(
+21228.8s	1600	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21228.8s	1601	  warnings.warn(
+21229.1s	1602	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21229.1s	1603	  warnings.warn(
+21229.1s	1604	
+21229.1s	1605	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21229.1s	1606	  warnings.warn(
+21790.2s	1607	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21790.2s	1608	  warnings.warn(
+21790.7s	1609	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21790.7s	1610	  warnings.warn(
+21790.7s	1611	
+21790.7s	1612	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21790.7s	1613	  warnings.warn(
+21878.4s	1614	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21878.4s	1615	  warnings.warn(
+21878.8s	1616	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21878.8s	1617	  warnings.warn(
+21878.8s	1618	
+21878.8s	1619	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21878.8s	1620	  warnings.warn(
+21882.1s	1621	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21882.1s	1622	  warnings.warn(
+21882.3s	1623	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21882.3s	1624	  warnings.warn(
+21882.3s	1625	
+21882.3s	1626	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21882.3s	1627	  warnings.warn(
+21885.4s	1628	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21885.4s	1629	  warnings.warn(
+21885.6s	1630	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21885.6s	1631	  warnings.warn(
+21885.6s	1632	
+21885.6s	1633	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21885.6s	1634	  warnings.warn(
+21886.2s	1635	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21886.2s	1636	  warnings.warn(
+21886.5s	1637	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21886.5s	1638	  warnings.warn(
+21886.5s	1639	
+21886.5s	1640	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+21886.5s	1641	  warnings.warn(
+22393.2s	1642	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+22393.2s	1643	  warnings.warn(
+22393.7s	1644	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+22393.7s	1645	  warnings.warn(
+22393.7s	1646	
+22393.7s	1647	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+22393.7s	1648	  warnings.warn(
+22404.8s	1649	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+22404.8s	1650	  warnings.warn(
+22405.0s	1651	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+22405.0s	1652	  warnings.warn(
+22405.0s	1653	
+22405.0s	1654	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+22405.0s	1655	  warnings.warn(
+22428.8s	1656	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+22428.8s	1657	  warnings.warn(
+22429.2s	1658	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+22429.2s	1659	  warnings.warn(
+22429.2s	1660	
+22429.2s	1661	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+22429.2s	1662	  warnings.warn(
+22429.8s	1663	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+22429.8s	1664	  warnings.warn(
+22430.0s	1665	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+22430.0s	1666	  warnings.warn(
+22430.0s	1667	
+22430.0s	1668	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+22430.0s	1669	  warnings.warn(
+22430.7s	1670	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+22430.7s	1671	  warnings.warn(
+22430.9s	1672	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+22430.9s	1673	  warnings.warn(
+22430.9s	1674	
+22430.9s	1675	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+22430.9s	1676	  warnings.warn(
+23711.7s	1677	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+23711.7s	1678	  warnings.warn(
+23712.2s	1679	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+23712.2s	1680	  warnings.warn(
+23712.2s	1681	
+23712.2s	1682	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+23712.2s	1683	  warnings.warn(
+23865.7s	1684	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+23865.7s	1685	  warnings.warn(
+23866.2s	1686	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+23866.2s	1687	  warnings.warn(
+23866.2s	1688	
+23866.2s	1689	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+23866.2s	1690	  warnings.warn(
+23898.5s	1691	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+23898.5s	1692	  warnings.warn(
+23898.9s	1693	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+23898.9s	1694	  warnings.warn(
+23898.9s	1695	
+23898.9s	1696	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+23898.9s	1697	  warnings.warn(
+23903.8s	1698	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+23903.8s	1699	  warnings.warn(
+23904.0s	1700	/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+23904.0s	1701	  warnings.warn(
+23904.0s	1702	
